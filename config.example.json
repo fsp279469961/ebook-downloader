@@ -23,7 +23,7 @@
   },
   "concurrency": 15,
   "retry": {
-    "maxAttempts": 3,
+    "maxAttempts": 2,
     "delays": [1000, 2000, 4000]
   }
 }
