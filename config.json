@@ -1,0 +1,29 @@
+{
+  "baseUrl": "http://m.77shuku.org/chapter/136589/",
+  "selectors": {
+    "bookTitle": ".read h3",
+    "chapterList": {
+      "container": ".cover",
+      "list": "ul.chapter",
+      "item": "li",
+      "link": "a",
+      "linkAttr": "href"
+    },
+    "chapterPagination": {
+      "selector": "select#indexselect",
+      "option": "option",
+      "valueAttr": "value"
+    },
+    "chapterContent": {
+      "title": "h1#nr_title",
+      "content": "div#nr1",
+      "nextPage": "#pb_next a",
+      "nextPageAttr": "href"
+    }
+  },
+  "concurrency": 15,
+  "retry": {
+    "maxAttempts": 3,
+    "delays": [1000, 2000, 4000]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ebook-downloader",
+  "version": "1.0.0",
+  "description": "电子书下载器，支持通过配置文件适配不同网站",
+  "main": "download_ebook.js",
+  "type": "module",
+  "scripts": {
+    "start": "node download_ebook.js"
+  },
+  "keywords": [
+    "ebook",
+    "downloader",
+    "novel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "p-limit": "^5.0.0"
+  }
+}

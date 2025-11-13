@@ -1,0 +1,29 @@
+{
+  "baseUrl": "https://www.djks5.com",
+  "selectors": {
+    "bookTitle": "h1.novel_title",
+    "chapterList": {
+      "container": "#info",
+      "list": "ul.section-list.fix",
+      "item": "li",
+      "link": "a",
+      "linkAttr": "href"
+    },
+    "chapterPagination": {
+      "selector": "select#indexselect",
+      "option": "option",
+      "valueAttr": "value"
+    },
+    "chapterContent": {
+      "title": "h1.qu-19ug-kmgl-2qah.title",
+      "content": "div#content",
+      "nextPage": "a#next_url, a[rel='next']",
+      "nextPageAttr": "href"
+    }
+  },
+  "concurrency": 15,
+  "retry": {
+    "maxAttempts": 3,
+    "delays": [1000, 2000, 4000]
+  }
+}
